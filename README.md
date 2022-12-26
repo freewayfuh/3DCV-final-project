@@ -12,7 +12,7 @@
 * 因為 image sequance 和 COLMAP 檔案極大，所以沒有上傳，我們直接提供原始的 video、原始的 .ply 檔以及前處理完的 .ply 檔
 
 
-## Enviroments
+# Enviroments
 python version: 3.9.15
 ```
 pip install -r requirements.txt
