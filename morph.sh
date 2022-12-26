@@ -11,4 +11,4 @@ python Kmeans.py --pcd1 $PCD1 --pcd2 $PCD2 --mapping --mapping_file result/Kmean
 python Kmeans.py --pcd1 $PCD1 --pcd2 $PCD2 --mapping --mapping_file result/axis/axis.pickle --output_folder result/axis/morph_ply
 
 # distance method
-# python Kmeans.py --pcd1 $PCD1 --pcd2 $PCD2 --mapping --mapping_file result/distance/axis.pickle --output_folder result/distance/morph_ply
+python distance_method.py --pcd1 $PCD1 --pcd2 $PCD2 --mapping --mapping_file result/distance/distance.pickle --output_folder result/distance/morph_ply

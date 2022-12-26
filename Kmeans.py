@@ -319,13 +319,13 @@ if __name__=='__main__':
     pcd1 = o3d.io.read_point_cloud(args.pcd1)
     pcd2 = o3d.io.read_point_cloud(args.pcd2)
 
-    # (mean, cov) = pcd.compute_mean_and_covariance()
+    # (mean1, cov) = pcd1.compute_mean_and_covariance()
     # (mean2, cov) = pcd2.compute_mean_and_covariance()
     
-    # mean_dif = mean - mean2
-    # points = np.asarray(pcd.points)
+    # mean_dif = mean1 - mean2
+    # points = np.asarray(pcd1.points)
     # points = points - mean_dif
-    # pcd.points = o3d.utility.Vector3dVector(points)
+    # pcd1.points = o3d.utility.Vector3dVector(points)
 
     pcd1 = [pcd1]
     pcd2 = [pcd2]
@@ -374,8 +374,7 @@ if __name__=='__main__':
     
     var_exists = 'total_mapping' in locals() or 'total_mapping' in globals()
     assert var_exists, 'total_mapping not exists, please use the argument "--mapping" to calculate the mapping'
-
-
+    
     ### Interpolation!!!
 
     k = args.k - 1

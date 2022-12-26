@@ -12,8 +12,15 @@
 * 因為 image sequance 和 COLMAP 檔案極大，所以沒有上傳，我們直接提供原始的 video、原始的 .ply 檔以及前處理完的 .ply 檔
 
 
-# Reproduce
+## Enviroments
+python version: 3.9.15
 ```
-bash Kmeans.sh
-bash run.sh METHOD
+pip install -r requirements.txt
+```
+
+# Reproduce
+執行下列指令後，demo video 會在 result/[method]/demo.mp4
+```
+bash morph.sh
+bash run.sh
 ```
