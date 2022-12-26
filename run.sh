@@ -7,9 +7,9 @@ METHOD=$1
 
 for INDEX in {0..59}
 do
-    echo python ply2image.py --pcd result/$METHOD/morph_ply/$INDEX.ply --output result/$METHOD/morph_png/$INDEX.png --cam_param cam.json
-    python ply2image.py --pcd $METHOD/morph_ply/$INDEX.ply --output $METHOD/morph_png/$INDEX.png --cam_param cam.json
+    echo python ply2image.py --ply_file result/$METHOD/morph_ply/$INDEX.ply --output result/$METHOD/morph_png/$INDEX.png --cam_param cam.json
+    python ply2image.py --ply_file result/$METHOD/morph_ply/$INDEX.ply --output result/$METHOD/morph_png/$INDEX.png --cam_param cam.json
 done
 
-echo python image2video.py --output result/$METHOD/demo.mp4
-python image2video.py --output $METHOD/demo.mp4
+echo python image2video.py --png_folder result/$METHOD/morph_png --output result/$METHOD/demo.mp4
+python image2video.py --png_folder result/$METHOD/morph_png --output result/$METHOD/demo.mp4

@@ -337,7 +337,7 @@ if __name__=='__main__':
         for kl in range(kmean_level):
 
             print('==================================')
-            print(f'Calculating level {kl} kmeans...')
+            print(f'Calculating level {kl+1} kmeans...')
             print('==================================')
 
             temp_pcd1 = []
